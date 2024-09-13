@@ -1,4 +1,6 @@
 import {
+  Avatar,
+  AvatarBadge,
   Box,
   Button,
   Flex,
@@ -6,21 +8,37 @@ import {
   HStack,
   Spacer,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import React from "react";
 
 const Navbar = () => {
+  const toast = useToast();
+
+  const showToast = () => {
+    toast({
+      title: "Logged out",
+      description: "Successfully logged out",
+    });
+  };
+
   return (
     <Flex as="nav" p="10px" align="center">
       <Heading as="h1">Doji task</Heading>
       <Spacer />
 
       <HStack spacing="20px">
-        <Box bg="gray.200" p="10px">
-          M
-        </Box>
+        <Avatar src="/public/img/mario.png">
+          <AvatarBadge width="1.3em" bg="teal.500">
+            <Text fontSize="xs" color="white">
+              3
+            </Text>
+          </AvatarBadge>
+        </Avatar>
         <Text>VuLe@gamil.com</Text>
-        <Button colorScheme="purple">Logout</Button>
+        <Button onClick={showToast} colorScheme="purple">
+          Logout
+        </Button>
       </HStack>
     </Flex>
 

@@ -1,5 +1,6 @@
 import { EditIcon, ViewIcon } from "@chakra-ui/icons";
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -29,6 +30,7 @@ export default function Dashboard() {
           >
             <CardHeader>
               <Flex gap={5}>
+                <Avatar src={task.img} />
                 <Box w="50px" h="50px">
                   <Text>AV</Text>
                 </Box>
@@ -64,10 +66,10 @@ export default function Dashboard() {
 }
 
 export const tasksLoader = async () => {
-  const res = await fetch("http://localhost:3000/tasks"); // Fetch dữ liệu từ API
+  const res = await fetch("http://localhost:3000/tasks");
   if (!res.ok) {
     throw new Error("Failed to fetch tasks");
   }
-  const data = await res.json(); // Chuyển đổi phản hồi thành JSON
-  return data; // Trả về dữ liệu để useLoaderData có thể sử dụng
+  const data = await res.json();
+  return data;
 };
