@@ -19,7 +19,10 @@ import { useLoaderData } from "react-router-dom";
 export default function Dashboard() {
   const tasks = useLoaderData();
   return (
-    <SimpleGrid columns={4} spacing={10} minChildWidth="300px">
+    <SimpleGrid
+      minChildWidth="300px"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-10 mb-12"
+    >
       {tasks &&
         tasks.map((task) => (
           <Card
