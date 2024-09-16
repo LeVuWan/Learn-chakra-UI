@@ -17,53 +17,227 @@ import {
 import { useLoaderData } from "react-router-dom";
 
 export default function Dashboard() {
-  const tasks = useLoaderData();
   return (
     <SimpleGrid
       minChildWidth="300px"
       className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-10 mb-12"
     >
-      {tasks &&
-        tasks.map((task) => (
-          <Card
-            key={task.id}
-            borderTop="8px"
-            borderColor="purple.400"
-            bg="white"
-          >
-            <CardHeader>
-              <Flex gap={5}>
-                <Avatar src={task.img} />
-                <Box w="50px" h="50px">
-                  <Text>AV</Text>
-                </Box>
-                <Box>
-                  <Heading as="h3" size="sm">
-                    {task.title}
-                  </Heading>
-                  <Text>By {task.author}</Text>
-                </Box>
-              </Flex>
-            </CardHeader>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
 
-            <CardBody color="gray.500">
-              <Text>{task.description}</Text>
-            </CardBody>
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
 
-            <Divider />
+        <Divider />
 
-            <CardFooter>
-              <HStack>
-                <Button variant="ghost" leftIcon={<ViewIcon />}>
-                  Watch
-                </Button>
-                <Button variant="ghost" leftIcon={<EditIcon />}>
-                  Comment
-                </Button>
-              </HStack>
-            </CardFooter>
-          </Card>
-        ))}{" "}
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
+
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
+
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
+
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
+
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
+      <Card borderTop="8px" borderColor="purple.400" bg="white">
+        <CardHeader>
+          <Flex gap={5}>
+            <Avatar src="/public/img/mario.png" />
+            <Box w="50px" h="50px">
+              <Text>AV</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="sm">
+                Fix the navbar
+              </Heading>
+              <Text>By Mario</Text>
+            </Box>
+          </Flex>
+        </CardHeader>
+
+        <CardBody color="gray.500">
+          <Text>
+            There is an issue with the navbar on the homepage. It is not
+            displaying correctly on mobile devices.
+          </Text>
+        </CardBody>
+
+        <Divider />
+
+        <CardFooter>
+          <HStack>
+            <Button variant="ghost" leftIcon={<ViewIcon />}>
+              Watch
+            </Button>
+            <Button variant="ghost" leftIcon={<EditIcon />}>
+              Comment
+            </Button>
+          </HStack>
+        </CardFooter>
+      </Card>
     </SimpleGrid>
   );
 }
