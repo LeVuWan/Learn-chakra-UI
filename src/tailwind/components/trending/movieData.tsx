@@ -1,4 +1,3 @@
-
 import BatmanBegins from '../../assets/batman_begins.jpg';
 import Dune from '../../assets/dune.jpg';
 import Sing2 from '../../assets/sing_2.jpg';
