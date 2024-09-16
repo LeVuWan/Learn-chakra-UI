@@ -46,6 +46,12 @@ const Slide = () => {
             Profile
           </NavLink>
         </ListItem>
+        <ListItem className="mt-2">
+          <NavLink to="/tailwind">
+            <ListIcon as={AtSignIcon} color="white" />
+            Learn Tailwind
+          </NavLink>
+        </ListItem>
       </List>
     </>
   );
